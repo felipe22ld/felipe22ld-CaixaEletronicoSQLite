@@ -7,9 +7,9 @@ public class Usuario
     public int Id { get; private set; }
     public string Nome { get; set; }
     public string Sobrenome { get; set; }
-    public long Cpf { get; set; }
-    public long Telefone { get; set; }
-    public int ChavePix { get; set; }
+    public string Cpf { get; set; }
+    public string Telefone { get; set; }
+    public string ChavePix { get; set; }
     public DateOnly DataNascimento { get; set; }
     public DateTime ContaCriadaEm { get; set; }
     public string Banco { get; set; }
@@ -20,9 +20,9 @@ public class Usuario
         int id, 
         string nome, 
         string sobrenome, 
-        long cpf, 
-        long telefone, 
-        int chavePix, 
+        string cpf, 
+        string telefone, 
+        string chavePix, 
         DateOnly dataNascimento, 
         DateTime contaCriadaEm, 
         string banco, 

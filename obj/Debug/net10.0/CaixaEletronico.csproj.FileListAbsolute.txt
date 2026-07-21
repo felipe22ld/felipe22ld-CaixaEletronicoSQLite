@@ -26,3 +26,4 @@
 /Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/obj/Debug/net10.0/CaixaEletronico.pdb
 /Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/obj/Debug/net10.0/CaixaEletronico.genruntimeconfig.cache
 /Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/obj/Debug/net10.0/ref/CaixaEletronico.dll
+/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/obj/Debug/net10.0/CaixaEletronico.sourcelink.json
