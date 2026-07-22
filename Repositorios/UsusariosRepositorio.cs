@@ -30,19 +30,6 @@ public class UsusariosRepositorio : IUsuarioRepositorio
         );
     }
 
-    // int id, 
-    // string nome, 
-    // string sobrenome, 
-    // long cpf, 
-    // long telefone, 
-    // int chavePix, 
-
-    //     DateOnly dataNascimento, 
-    // DateTime contaCriadaEm, 
-    // string banco, 
-    // decimal saldo)
-
-
     public void Exibir()
     {
         throw new NotImplementedException();
@@ -87,7 +74,7 @@ public class UsusariosRepositorio : IUsuarioRepositorio
     {
         while (true)
         {
-            Console.WriteLine("Nome:  ");
+            Console.Write("Nome:  ");
             var nome = Console.ReadLine()?.Trim();
             if (!string.IsNullOrWhiteSpace(nome))
             {
@@ -103,7 +90,7 @@ public class UsusariosRepositorio : IUsuarioRepositorio
     {
         while (true)
         {
-            Console.WriteLine("Sobrenome:  ");
+            Console.Write("Sobrenome:  ");
             var sobreNome = Console.ReadLine()?.Trim();
             if (!string.IsNullOrWhiteSpace(sobreNome))
             {
@@ -119,7 +106,7 @@ public class UsusariosRepositorio : IUsuarioRepositorio
     {
         while (true)
         {
-            Console.WriteLine("Data de Nascimento: (dd/mm/yyyy) ");
+            Console.Write("Data de Nascimento (dd/mm/yyyy):");
             var data = Console.ReadLine();
 
             if (DateOnly.TryParse(data, out var dataNascimento))
@@ -136,7 +123,7 @@ public class UsusariosRepositorio : IUsuarioRepositorio
     {
         while (true)
         {
-            Console.WriteLine("CPF (somente números): XXXXXXXXXXXX ");
+            Console.Write("CPF (somente números)  ex.:0123456789: ");
             var cpf = Console.ReadLine();
 
             if (!string.IsNullOrWhiteSpace(cpf))
@@ -153,7 +140,7 @@ public class UsusariosRepositorio : IUsuarioRepositorio
     {
         while (true)
         {
-            Console.WriteLine("Telefone (com DDD): (XX) XXXXX XXXX");
+            Console.Write("Telefone (com DDD) ex.:21999999999:");
             var telefone = Console.ReadLine();
 
             if (!string.IsNullOrWhiteSpace(telefone))

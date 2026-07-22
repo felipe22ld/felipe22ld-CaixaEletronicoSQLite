@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net10.0": {}
   },
@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/CaixaEletronico.csproj",
+      "projectUniqueName": "/Users/felipedias/Documents/Estartando Devs Back-end/felipe22ld-CaixaEletronicoSQLite/CaixaEletronico.csproj",
       "projectName": "CaixaEletronico",
-      "projectPath": "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/CaixaEletronico.csproj",
+      "projectPath": "/Users/felipedias/Documents/Estartando Devs Back-end/felipe22ld-CaixaEletronicoSQLite/CaixaEletronico.csproj",
       "packagesPath": "/Users/felipedias/.nuget/packages/",
-      "outputPath": "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/obj/",
+      "outputPath": "/Users/felipedias/Documents/Estartando Devs Back-end/felipe22ld-CaixaEletronicoSQLite/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/felipedias/.nuget/NuGet/NuGet.Config"
@@ -30,7 +30,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -49,7 +48,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "imports": [
           "net461",
@@ -70,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
