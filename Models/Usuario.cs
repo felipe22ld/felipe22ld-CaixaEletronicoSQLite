@@ -19,24 +19,23 @@ public class Usuario
     public Usuario(
         int id, 
         string nome, 
-        string sobrenome, 
-        string cpf, 
-        string telefone, 
-        string chavePix, 
-        DateOnly dataNascimento, 
-        DateTime contaCriadaEm, 
-        string banco, 
+        // string sobrenome, 
+        // string cpf, 
+        // string telefone, 
+        // string chavePix, 
+        // DateOnly dataNascimento, 
+        // DateTime contaCriadaEm, 
+        // string banco, 
         decimal saldo)
     {
         Id = id;
         Nome = nome;
-        Sobrenome = sobrenome;
-        Cpf = cpf;
-        Telefone = telefone;
-        ChavePix = chavePix;
-        DataNascimento = dataNascimento;
-        ContaCriadaEm = contaCriadaEm;
-        Banco = banco;
+        // Sobrenome = sobrenome;
+        // Cpf = cpf;
+        // Telefone = telefone;
+        // ChavePix = chavePix;
+        // ContaCriadaEm = contaCriadaEm;
+        // Banco = banco;
         Saldo = saldo;
     }
 }

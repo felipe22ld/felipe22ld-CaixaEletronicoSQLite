@@ -10,22 +10,22 @@ public class UsusariosRepositorio : IUsuarioRepositorio
     public void Cadastrar()
     {
         var nome = LerNome();
-        var sobreNomenome = LerSobreNome();
-        var dataDeNascimento = LerDataDeNascimento();
-        var cpf = LerCpf();
-        var telefone = LerTelefone();
-        var chavePix = LerChavePix();
+        // var sobreNomenome = LerSobreNome();
+        // var dataDeNascimento = LerDataDeNascimento();
+        // var cpf = LerCpf();
+        // var telefone = LerTelefone();
+        // var chavePix = LerChavePix();
 
         var usuario = new Usuario(
             GerarProximoId(),
             nome,
-            sobreNomenome,
-            cpf,
-            telefone,
-            chavePix,
-            dataDeNascimento,
-            new DateTime(),
-            "inter",
+            // sobreNomenome,
+            // cpf,
+            // telefone,
+            // chavePix,
+            // dataDeNascimento,
+            // new DateTime(),
+            // "inter",
             0
         );
     }

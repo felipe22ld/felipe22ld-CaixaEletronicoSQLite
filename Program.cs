@@ -3,6 +3,7 @@ using CaixaEletronico.Interfaces;
 using CaixaEletronico.Repositorios;
 
 IUsuarioRepositorio usuarioRepositorio = new UsusariosRepositorio();
-var aplicacao = new AppUsuarioAplicacao(usuarioRepositorio);
+ITransacaoRepositorio transacaoRepositorio = new TransacaoRepositorio();
+var aplicacao = new AppUsuarioAplicacao(usuarioRepositorio, transacaoRepositorio);
 
 aplicacao.Executar();

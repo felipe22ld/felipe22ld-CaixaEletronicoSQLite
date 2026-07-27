@@ -6,8 +6,7 @@ public interface IUsuarioRepositorio
     void Exibir();
     void Editar();
     void Excluir();
-
-    // void Depositar();
+    void Depositar();
     // void Sacar();
     // void Transferir();
     // void ConsultarSaldo();

@@ -6,10 +6,12 @@ namespace CaixaEletronico.Aplicacao;
 public class AppUsuarioAplicacao
 {
     private readonly IUsuarioRepositorio _usuarioRepositorio;
+    private readonly ITransacaoRepositorio _transacaoRepositorio;
 
-    public AppUsuarioAplicacao(IUsuarioRepositorio usuarioRepositorio)
+    public AppUsuarioAplicacao(IUsuarioRepositorio usuarioRepositorio, ITransacaoRepositorio transacaoRepositorio)
     {
         _usuarioRepositorio = usuarioRepositorio;
+        _transacaoRepositorio = transacaoRepositorio;
     }
 
     public void Executar()
@@ -29,7 +31,8 @@ public class AppUsuarioAplicacao
                     _usuarioRepositorio.Cadastrar();
                     break;
                 case "2":
-                    _usuarioRepositorio.Exibir();
+                    _transacaoRepositorio.Depositar();
+                    // _usuarioRepositorio.Exibir();
                     break;
                 case "3":
                     _usuarioRepositorio.Editar();
