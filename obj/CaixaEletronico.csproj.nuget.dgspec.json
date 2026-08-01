@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/CaixaEletronico.csproj": {}
+    "/home/runner/work/felipe22ld-CaixaEletronicoSQLite/felipe22ld-CaixaEletronicoSQLite/CaixaEletronico.csproj": {}
   },
   "projects": {
-    "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/CaixaEletronico.csproj": {
+    "/home/runner/work/felipe22ld-CaixaEletronicoSQLite/felipe22ld-CaixaEletronicoSQLite/CaixaEletronico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/CaixaEletronico.csproj",
+        "projectUniqueName": "/home/runner/work/felipe22ld-CaixaEletronicoSQLite/felipe22ld-CaixaEletronicoSQLite/CaixaEletronico.csproj",
         "projectName": "CaixaEletronico",
-        "projectPath": "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/CaixaEletronico.csproj",
-        "packagesPath": "/Users/felipedias/.nuget/packages/",
-        "outputPath": "/Users/felipedias/Documents/Estartando Devs/CaixaEletronico/CaixaEletronico/obj/",
+        "projectPath": "/home/runner/work/felipe22ld-CaixaEletronicoSQLite/felipe22ld-CaixaEletronicoSQLite/CaixaEletronico.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/felipe22ld-CaixaEletronicoSQLite/felipe22ld-CaixaEletronicoSQLite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/felipedias/.nuget/NuGet/NuGet.Config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.302/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
