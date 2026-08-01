@@ -28,11 +28,24 @@ public class UsusariosRepositorio : IUsuarioRepositorio
             // "inter",
             0
         );
+
+        _usuarios.Add(usuario);
+        Console.WriteLine($"Conta criada com sucesso! Id da conta: {usuario.Id}");
     }
 
     public void Exibir()
     {
-        throw new NotImplementedException();
+        if (_usuarios.Count == 0)
+        {
+            Console.WriteLine("Nenhuma conta cadastrada.");
+            return;
+        }
+
+        Console.WriteLine("Contas disponíveis:");
+        foreach (var usuario in _usuarios)
+        {
+            Console.WriteLine($"Id: {usuario.Id} | Nome: {usuario.Nome} | Saldo: {usuario.Saldo:C}");
+        }
     }
 
     public void Editar()
@@ -47,7 +60,25 @@ public class UsusariosRepositorio : IUsuarioRepositorio
 
     public void Depositar()
     {
-        throw new NotImplementedException();
+        if (_usuarios.Count == 0)
+        {
+            Console.WriteLine("Nenhuma conta cadastrada para depósito.");
+            return;
+        }
+
+        Exibir();
+        var idConta = LerIdConta();
+        var conta = _usuarios.FirstOrDefault(usuario => usuario.Id == idConta);
+
+        if (conta is null)
+        {
+            Console.WriteLine("Conta não encontrada.");
+            return;
+        }
+
+        var valor = LerValor();
+        conta.Saldo += valor;
+        Console.WriteLine($"Depósito realizado! Novo saldo da conta {conta.Id}: {conta.Saldo:C}");
     }
 
     public void Sacar()
@@ -188,5 +219,39 @@ public class UsusariosRepositorio : IUsuarioRepositorio
 
         var id = _usuarios.Max(u => u.Id) + 1;
         return id;
+    }
+
+    private static int LerIdConta()
+    {
+        while (true)
+        {
+            Console.Write("Digite o Id da conta para depósito: ");
+            var entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out var idConta) && idConta > 0)
+            {
+                return idConta;
+            }
+
+            Console.WriteLine("Digite um Id válido.");
+            Console.WriteLine();
+        }
+    }
+
+    private static decimal LerValor()
+    {
+        while (true)
+        {
+            Console.Write("Digite o valor para depósito: ");
+            var entrada = Console.ReadLine();
+
+            if (decimal.TryParse(entrada, out var valorDeposito) && valorDeposito > 0)
+            {
+                return valorDeposito;
+            }
+
+            Console.WriteLine("Digite um valor maior que zero.");
+            Console.WriteLine();
+        }
     }
 }
