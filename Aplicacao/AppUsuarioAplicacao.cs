@@ -31,8 +31,7 @@ public class AppUsuarioAplicacao
                     _usuarioRepositorio.Cadastrar();
                     break;
                 case "2":
-                    _transacaoRepositorio.Depositar();
-                    // _usuarioRepositorio.Exibir();
+                    _usuarioRepositorio.Depositar();
                     break;
                 case "3":
                     _usuarioRepositorio.Editar();
@@ -40,12 +39,13 @@ public class AppUsuarioAplicacao
                 case "4":
                     _usuarioRepositorio.Excluir();
                     break;
+                case "5":
+                    executando = false;
+                    break;
                 default:
                     ExibirOpcaoInvalida();
                     break;
             }
-
-            executando = false;
         }
     }
 
