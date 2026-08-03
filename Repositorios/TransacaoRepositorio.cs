@@ -3,7 +3,7 @@ using CaixaEletronico.Models;
 
 namespace CaixaEletronico.Repositorios;
 
-public class TransacaoRepositorio : ITransacaoRepositorio
+public class ContaRepositorio : IContaRepositorio
 {
     private readonly List<Transacao> _transacoes = [];
 
@@ -92,5 +92,15 @@ public class TransacaoRepositorio : ITransacaoRepositorio
             Console.WriteLine("Digite um valor maior que zero.");
             Console.WriteLine();
         }
+    }
+
+    public void Registrar(Transacao transacao)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Transacao> BuscarPorConta(int numeroConta)
+    {
+        throw new NotImplementedException();
     }
 }
